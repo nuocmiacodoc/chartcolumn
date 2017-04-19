@@ -1,0 +1,175 @@
+<component
+		id="BeatChart"
+		title="Beat Chart 2.0"
+		icon="res/BeatChart/BeatChart.png"
+		handlerType="div"
+		tooltip="Displays multidimensional data (for DS 1.6)"
+		modes="commons m"
+		propertySheetPath="aps/PropertyPage.html"
+		group="GcsEbsBiVisualizations"
+		databound="true"
+>
+	<requireJs modes="commons m">res/BeatChart/BeatChart</requireJs>
+	
+	<!-- Base Databound Properties -->
+	<property
+			id="data"
+			title="Data Selection"
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="false"/>
+			<option name="includeData" value="true"/>
+            <option name="maxCells" value="40000"/>
+	</property>
+	<property id="ignoreTotals" type="boolean" title = "Ignore Totals" visible="false" group="DataBinding"/>
+	<property id="ignoreExpandedNodes" type="boolean" title = "Ignore Expanded Nodes" visible="false" group="DataBinding"/>
+	<property id="swapAxes" type="boolean" title = "Swap Axes" visible="false" group="DataBinding"/>
+	<property id="useMockData" type="boolean" title = "Use Mock Data" visible="false" group="DataBinding"/>
+	<!-- End of Base Databound Properties -->
+    <!-- Begin of BeatChart Properties -->
+<!--     <property -->
+<!--         id="data" -->
+<!--         title="Data Selection" -->
+<!--         tooltip="Use the selection JSON format to select the cells that you want to display" -->
+<!--         type="ResultSet" -->
+<!--         group="DataBinding"> -->
+<!--         <option name="maxCells" value="100000" /> -->
+<!--         <option name="includeFormattedData" value="true"/> -->
+<!--         <option name="includeData" value="true"/> -->
+<!--         <option name="includeResults" value="false"/> -->
+<!--         <option name="presentationDelimiter" value=" | " /> -->
+<!--     </property> -->
+
+<!--     <property -->
+<!--         id="DSwapAxes" -->
+<!--         title="Swap Axes" -->
+<!--         tooltip="Specifies if result set axes are swapped when chart is display" -->
+<!--         type="boolean" -->
+<!--         group="Display" -->
+<!--         bindable="true" -->
+<!--         visible="true"> -->
+<!--     </property> -->
+
+    <property
+        id="DHideSuperLevels"
+        title="Hide Super Levels"
+        tooltip="Set the visibility of the super levels of labels on X-Axis"
+        type="boolean"
+        group="Display"
+        bindable="true"
+        visible="true">
+    </property>
+    
+<!--     <property id="ignoreTotals" type="boolean" title = "Ignore Totals" visible="false" group="DataBinding"/> -->
+
+    <!-- Color -->
+    <property id="pointColor" title="Point Color" type="Color" group="Display" bindable="true"/>
+    <property id="selectedLineColor" title="Selected Line Color" type="Color" group="Display" bindable="true"/>
+    <property id="selectedPointColor" title="Selected Point Color" type="Color" group="Display" bindable="true"/>
+    <property id="meanLineColor" title="Mean Line Color" type="Color" group="Display" bindable="true"/>
+    <property id="meanPointColor" title="Mean Point Color" type="Color" group="Display" bindable="true"/>
+    
+    <!-- Legend -->
+    <property
+        id="DShowLegend"
+        type="boolean"
+        title="Show Legend"
+        group="Display"
+        bindable="true"
+        visible="true">
+    </property>
+    <property
+        id="DLegendWidth"
+        type="int"
+        title="Legend Width"
+        group="Display"
+        bindable="true"
+        visible="true">
+    </property>
+    <property id="DLegendOpacity" type="int" title = "Legend Opacity (%)" visible="false"/>
+    <property id="DLegendLeft" type="int" title = "Legend Left" visible="false"/>
+    <property id="DLegendTop" type="int" title = "Legend Top" visible="false"/>
+    
+    <!-- X-axis/Y-axis -->
+    <property id="xAxisLabel" title="X-Axis Label" type="String" visible="false"/>
+    <property id="xAxisLabelPaddingLeft" type="int" title = "X-Axis Label - Padding Left" visible="false"/>
+    <property id="xAxisLabelPaddingTop" type="int" title = "X-Axis Label - Padding Top" visible="false"/>
+    <property id="hideXAxisLabel" title="Hide X-Axis Label" type="boolean" visible="false"/>
+    <property id="rotateXAxisValue45" title="Rotate X-Axis Value 45" type="boolean" visible="false"/>
+    <property id="yAxisLabel" title="Y-Axis Label" type="String" visible="false"/>
+    <property id="yAxisLabelPaddingLeft" type="int" title = "Y-Axis Label - Padding Left" visible="false"/>
+    <property id="yAxisLabelPaddingTop" type="int" title = "Y-Axis Label - Padding Top" visible="false"/>
+    <property id="hideYAxisLabel" title="Hide Y-Axis Label" type="boolean" visible="false"/>
+    <property id="yAxisOrientation" title="Y-Axis Orientation" type="String" visible="false"/>
+    <property id="tickFiltering" title="Tick Filtering" type="int" visible="false" />
+    
+    <!-- Margin -->
+    <property id="paddingLeft" title="Padding Left" type="int" visible="false"/>
+    <property id="paddingRight" title="Padding Right" type="int" visible="false"/>
+    <property id="paddingTop" title="Padding Top" type="int" visible="false"/>
+    <property id="paddingBottom" title="Padding Bottom" type="int" visible="false"/>
+    
+    <!-- Title -->
+    <property id="showTitle" title="Show Title" type="boolean" visible="false" />
+    <property id="chartTitle" title="Chart Title" type="String" visible="false"/>
+    <property id="titleTop" title="Title Top" type="int" visible="false" />
+    <property id="titleLeft" title="Title Left" type="int" visible="false" />
+    <!-- End of BeatChart Properties -->
+
+	<initialization>
+		<!-- Databound Defaults -->
+		<defaultValue property="ignoreTotals">true</defaultValue>
+		<defaultValue property="ignoreExpandedNodes">true</defaultValue>
+		<defaultValue property="swapAxes">false</defaultValue>
+		<defaultValue property="useMockData">true</defaultValue>
+		<!-- End of Databound Defaults -->		
+		<!-- BeatChart Defaults -->
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="WIDTH">600</defaultValue>
+		<defaultValue property="HEIGHT">400</defaultValue>
+		
+		<defaultValue property="DSwapAxes"><![CDATA[false]]></defaultValue>
+		<defaultValue property="DHideSuperLevels"><![CDATA[true]]></defaultValue>
+		<defaultValue property="data"><![CDATA[]]></defaultValue>
+		
+		<defaultValue property="pointColor">#9BA2A3</defaultValue>
+		<defaultValue property="selectedLineColor">#3B8CEF</defaultValue>
+		<defaultValue property="selectedPointColor">#285EA0</defaultValue>
+		<defaultValue property="meanLineColor">#F24110</defaultValue>
+		<defaultValue property="meanPointColor">#BF480D</defaultValue>
+		
+		<defaultValue property="DShowLegend"><![CDATA[true]]></defaultValue>
+		<defaultValue property="DLegendOpacity">60</defaultValue>
+        <defaultValue property="DLegendWidth"><![CDATA[160]]></defaultValue>
+		<defaultValue property="DLegendLeft">40</defaultValue>
+		<defaultValue property="DLegendTop">40</defaultValue>
+		
+		<defaultValue property="ignoreTotals">true</defaultValue>
+		
+		<defaultValue property="hideXAxisLabel">true</defaultValue>
+		<defaultValue property="rotateXAxisValue45">false</defaultValue>
+		<defaultValue property="hideYAxisLabel">true</defaultValue>
+		<defaultValue property="yAxisOrientation">right</defaultValue>
+		<defaultValue property="xAxisLabel">Default x-label</defaultValue>
+		<defaultValue property="yAxisLabel">Default y-label</defaultValue>
+		<defaultValue property="xAxisLabelPaddingLeft">0</defaultValue>
+		<defaultValue property="xAxisLabelPaddingTop">0</defaultValue>
+		<defaultValue property="yAxisLabelPaddingLeft">0</defaultValue>
+		<defaultValue property="yAxisLabelPaddingTop">0</defaultValue>
+		<defaultValue property="tickFiltering">1</defaultValue>
+		<defaultValue property="paddingLeft">40</defaultValue>
+		<defaultValue property="paddingRight">70</defaultValue>
+		<defaultValue property="paddingTop">20</defaultValue>
+		<defaultValue property="paddingBottom">80</defaultValue>
+		
+		<defaultValue property="showTitle">false</defaultValue>
+		<defaultValue property="chartTitle">Chart Title</defaultValue>
+		<defaultValue property="titleTop">10</defaultValue>
+		<defaultValue property="titleLeft">40</defaultValue>
+		<!-- End of BeatChart Defaults -->
+		
+	</initialization>
+</component>

@@ -1,0 +1,11 @@
+        <property
+            id="color"
+            title="Color"
+            type="Color"
+            group="Display"
+            bindable="true"/>
+        <property
+            id="onclick"
+            title="On Click"
+            type="ScriptText"
+            group="Events"/>

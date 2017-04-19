@@ -1,0 +1,74 @@
+   <property
+            id="data"
+            title="Data Selection"
+            tooltip="Use the selection JSON format to select the cells that you want to display"
+            type="ResultSet"
+            group="DataBinding">
+            <option name="maxCells" value="100000" />
+            <option name="includeFormattedData" value="true"/>
+            <option name="includeData" value="true"/>
+            <option name="includeResults" value="false"/>
+            <option name="presentationDelimiter" value=" | " />
+            <option name="fillMetadataProperty" value="true" />
+        </property>
+
+        <property
+            id="DSwapAxes"
+            title="Swap Axes"
+            tooltip="Specifies if result set axes are swapped when chart is display"
+            type="boolean"
+            group="Display"
+            bindable="true"
+            visible="true">
+        </property>
+    
+      <property
+            id="dim"
+            title="Dimensions"
+            type="Array"
+            bindable="true">
+             <property
+			id="dimmeber"
+			title="member"
+			type="Object">
+			<property
+			id="dimKey"
+			title="Dim_Key"
+			type="String"/>
+			<property
+			id="format"
+			title="Format"
+			type="String"/>
+				<property
+			id="name"
+			title="Name"
+			type="String"/>
+			</property>
+			
+        </property>
+    
+        <property
+            id="DHideSuperLevels"
+            title="Hide Super Levels"
+            tooltip="Set the visibility of the super levels of labels on X-Axis"
+            type="boolean"
+            group="Display"
+            bindable="true"
+            visible="true">
+        </property>
+        
+        <property
+			id="pos"
+			title="Position of Icon"
+			type="String"
+			visible="false"/>
+			
+         <property id="iconheight" type="int" title = "Icon Height" visible="false"/>
+   		 <property id="iconwidth" type="int" title = "Icon Width" visible="false"/>
+    
+        <property
+			id="onSelect"
+			title="On Select"
+			type="ScriptText"
+			group="Events"/>
+    

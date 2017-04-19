@@ -1,0 +1,9 @@
+    <component
+        id="ColoredBox"
+        title="Colored Box"
+        icon="res/ColoredBox/ColoredBox.png"
+        handlerType="div"
+        modes="commons m"
+        group="GcsEbsBiVisualizations"
+        propertySheetPath="aps/PropertyPage.html">
+        <requireJs modes="commons m">res/ColoredBox/ColoredBox</requireJs>

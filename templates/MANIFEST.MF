@@ -1,0 +1,2 @@
+Bundle-Name: Design Studio GCS EBS BI Data Bound
+Bundle-SymbolicName: com.gcs.ebs.bi.databound;singleton:=true

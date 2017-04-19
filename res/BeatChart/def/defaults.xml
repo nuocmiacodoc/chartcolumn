@@ -1,0 +1,49 @@
+		
+		<!-- BeatChart Defaults -->
+		<defaultValue property="TOP_MARGIN">0</defaultValue>
+		<defaultValue property="LEFT_MARGIN">0</defaultValue>
+		<defaultValue property="BOTTOM_MARGIN">auto</defaultValue>
+		<defaultValue property="RIGHT_MARGIN">auto</defaultValue>
+		<defaultValue property="WIDTH">600</defaultValue>
+		<defaultValue property="HEIGHT">400</defaultValue>
+		
+		<defaultValue property="DSwapAxes"><![CDATA[false]]></defaultValue>
+		<defaultValue property="DHideSuperLevels"><![CDATA[true]]></defaultValue>
+		<defaultValue property="data"><![CDATA[]]></defaultValue>
+		
+		<defaultValue property="pointColor">#9BA2A3</defaultValue>
+		<defaultValue property="selectedLineColor">#3B8CEF</defaultValue>
+		<defaultValue property="selectedPointColor">#285EA0</defaultValue>
+		<defaultValue property="meanLineColor">#F24110</defaultValue>
+		<defaultValue property="meanPointColor">#BF480D</defaultValue>
+		
+		<defaultValue property="DShowLegend"><![CDATA[true]]></defaultValue>
+		<defaultValue property="DLegendOpacity">60</defaultValue>
+        <defaultValue property="DLegendWidth"><![CDATA[160]]></defaultValue>
+		<defaultValue property="DLegendLeft">40</defaultValue>
+		<defaultValue property="DLegendTop">40</defaultValue>
+		
+		<defaultValue property="ignoreTotals">true</defaultValue>
+		
+		<defaultValue property="hideXAxisLabel">true</defaultValue>
+		<defaultValue property="rotateXAxisValue45">false</defaultValue>
+		<defaultValue property="hideYAxisLabel">true</defaultValue>
+		<defaultValue property="yAxisOrientation">right</defaultValue>
+		<defaultValue property="xAxisLabel">Default x-label</defaultValue>
+		<defaultValue property="yAxisLabel">Default y-label</defaultValue>
+		<defaultValue property="xAxisLabelPaddingLeft">0</defaultValue>
+		<defaultValue property="xAxisLabelPaddingTop">0</defaultValue>
+		<defaultValue property="yAxisLabelPaddingLeft">0</defaultValue>
+		<defaultValue property="yAxisLabelPaddingTop">0</defaultValue>
+		<defaultValue property="tickFiltering">1</defaultValue>
+		<defaultValue property="paddingLeft">40</defaultValue>
+		<defaultValue property="paddingRight">70</defaultValue>
+		<defaultValue property="paddingTop">20</defaultValue>
+		<defaultValue property="paddingBottom">80</defaultValue>
+		
+		<defaultValue property="showTitle">false</defaultValue>
+		<defaultValue property="chartTitle">Chart Title</defaultValue>
+		<defaultValue property="titleTop">10</defaultValue>
+		<defaultValue property="titleLeft">40</defaultValue>
+		<!-- End of BeatChart Defaults -->
+		

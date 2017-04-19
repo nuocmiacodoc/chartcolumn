@@ -1,0 +1,26 @@
+    <component
+        id="ColoredBox"
+        title="Colored Box"
+        icon="res/ColoredBox/ColoredBox.png"
+        handlerType="div"
+        modes="commons m"
+        group="GcsEbsBiVisualizations"
+        propertySheetPath="aps/PropertyPage.html">
+        <requireJs modes="commons m">res/ColoredBox/ColoredBox</requireJs>        <property
+            id="color"
+            title="Color"
+            type="Color"
+            group="Display"
+            bindable="true"/>
+        <property
+            id="onclick"
+            title="On Click"
+            type="ScriptText"
+            group="Events"/>
+	<initialization>            <defaultValue property="LEFT_MARGIN">40</defaultValue>
+            <defaultValue property="TOP_MARGIN">40</defaultValue>       
+            <defaultValue property="WIDTH">100</defaultValue>
+            <defaultValue property="HEIGHT">100</defaultValue>
+            <defaultValue property="color">red</defaultValue>
+	</initialization>
+</component>

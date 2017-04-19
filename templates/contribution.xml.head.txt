@@ -1,0 +1,2 @@
+	id="com.gcs.ebs.bi.databound"
+	title="Design Studio GCS EBS BI Data Bound"

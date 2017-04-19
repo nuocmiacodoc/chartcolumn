@@ -1,0 +1,7 @@
+
+	<group
+		id="GcsEbsBiVisualizations"
+		title="GCS EBS BI Visualizations"/>	
+	<group
+		id="GcsEbsBiBasics"
+		title="GCS EBS BI Basics"/>	

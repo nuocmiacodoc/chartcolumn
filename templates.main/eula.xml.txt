@@ -1,0 +1,5 @@
+
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	version="3.0"
+	vendor="GCS EBS BI"
+	eula="">

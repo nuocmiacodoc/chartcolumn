@@ -1,0 +1,11 @@
+<component
+		id="Chart3"
+		title="Column Chart"
+		icon="res/Chart3/icon.png"
+		handlerType="div"
+		tooltip="Displays multidimensional data (for DS 1.6)"
+        modes="commons"
+        propertySheetPath="aps/PropertyPage.html"
+        group="GcsEbsBiVisualizations"
+		databound="true">
+        <requireJs modes="commons">res/Chart3/Chart3</requireJs>

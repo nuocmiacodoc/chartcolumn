@@ -1,0 +1,13 @@
+<component
+		id="BeatChart"
+		title="Beat Chart 2.0"
+		icon="res/BeatChart/BeatChart.png"
+		handlerType="div"
+		tooltip="Displays multidimensional data (for DS 1.6)"
+		modes="commons m"
+		propertySheetPath="aps/PropertyPage.html"
+		group="GcsEbsBiVisualizations"
+		databound="true"
+>
+	<requireJs modes="commons m">res/BeatChart/BeatChart</requireJs>
+	
